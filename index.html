@@ -97,7 +97,20 @@
             }
 
 
-
+            @media (prefers-color-scheme: dark) {
+      body {
+        background: #18181b;
+        color: #f4f4f5;
+      }
+    }
+    .skill-animate {
+      width: 0;
+      transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .skill-bar:hover .skill-animate {
+      filter: brightness(1.2);
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
    
 
 
@@ -200,69 +213,106 @@
             <div class="signature">Krish Shrestha</div>
           </div>
         </div>
-       <div id="portfolio" class="min-h-screen bg-light-gray flex flex-col items-center justify-center p-4 text-black">
-    <div class="w-full max-w-5xl">
-        <h2 class="text-3xl font-bold mb-4">My Portfolio</h2>
-        <p class="text-lg mb-6">Welcome to my portfolio! Here you'll find a curated selection of my most recent projects, showcasing my skills in web design, UI/UX, and graphic design. Each project highlights my ability to create user-friendly, visually appealing designs tailored to specific needs. Feel free to explore and click on any project to see more details. I hope you enjoy what you see!</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Project Card 1 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="mockuuups-iphone-16-mockup-on-concrete-surface-with-charging-cable.jpeg" alt="Project 1" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">News App Design</h3>
-                    <p class="text-gray-700 mb-4">Info is a modern news app where you can follow your favorite news providers and stay updated with the latest stories. You can also share your own news, making it a dynamic platform for both readers and contributors.</p>
-                    <a href="https://www.figma.com/proto/V4Z2o2eu2wng09sAisUvN2/Untitled?node-id=1-5&t=IKoO0QuknIJmjCa9-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-            <!-- Project Card 2 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="Laptop Screen Website Mockup.png" alt="Project 2" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">Landing Page Design</h3>
-                    <p class="text-gray-700 mb-4">Modern and sleek landing page design with a clean black-and-white theme. The layout is user-friendly, featuring a bold CTA, structured navigation, and a visually appealing hero section that enhances engagement.</p>
-                    <a href="https://www.figma.com/proto/aQIcfkQyIXFX0HCPNFBgid/Untitled?page-id=0%3A1&node-id=7-148&viewport=-166%2C251%2C0.1&t=mTlEravhpFv7QxCe-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-            <!-- Project Card 3 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="flower mockup.jpg" alt="Project 3" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">Clean Flower Selling Website Design</h3>
-                    <p class="text-gray-700 mb-4">A clean and modern flower shop website design with a user-friendly layout, vibrant visuals, and seamless navigation.</p>
-                    <a href="https://www.figma.com/proto/mZ08U7jxiht5LgeW0K33GI/Untitled?node-id=1-5&t=IQx3jyJGSC6wWmtc-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-            <!-- Project Card 4 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="Car.jpg" alt="Project 4" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">Car rental website Design</h3>
-                    <p class="text-gray-700 mb-4">A modern and user-friendly car rental website with seamless booking, advanced search, and a sleek design for the best user experience.</p>
-                    <a href="https://www.figma.com/proto/Y191nu2RAZGDK5dTnTC8t8/Untitled?node-id=1-689&t=fqjzTpFJNL21HII1-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-            <!-- Project Card 5 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="company profile mockup.jpg" alt="Project 5" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">Company Profile Design</h3>
-                    <p class="text-gray-700 mb-4">A mordern and user-friendly company profile with all the information about services, team members, and the clients included.</p>
-                    <a href="https://www.figma.com/proto/cGfjnw1eutZD3mvyqLKdGh/Untitled?node-id=0-3&t=9NwRwWzYvkocEVuL-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-            <!-- Project Card 6 -->
-            <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src="Dog.jpg" alt="Project 6" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="text-xl font-bold mb-2">Dog Food Website Design</h3>
-                    <p class="text-gray-700 mb-4">Mordern and clean dog food website showcasing the available foods.</p>
-                    <a href="https://www.figma.com/proto/YCcMkDc7S2JISoGJmcju9w/Untitled?node-id=0-3&t=UWT01jh927Nr1bim-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-        </div>
-        <!-- Add more sections or elements as needed -->
-    </div>
-</div>
+        <div id="portfolio" class="min-h-screen bg-light-gray flex flex-col items-center justify-center p-4 text-black">
+          <div class="w-full max-w-5xl">
+              <h2 class="text-3xl font-bold mb-4">My Portfolio</h2>
+              <p class="text-lg mb-6">Welcome to my portfolio! Here you'll find a curated selection of my most recent projects, showcasing my skills in web design, UI/UX, and graphic design. Each project highlights my ability to create user-friendly, visually appealing designs tailored to specific needs. Feel free to explore and click on any project to see more details. I hope you enjoy what you see!</p>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <!-- Project Card 1 - NEW LIVE PROJECT -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 relative flex flex-col h-full">
+                      <div class="relative">
+                          <img src="/Star.png" alt="Starhifi Website" class="w-full h-48 object-cover">
+                          <div class="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 text-xs font-semibold rounded">
+                              LIVE
+                          </div>
+                      </div>
+                      <div class="p-4 flex flex-col flex-grow">
+                          <h3 class="text-xl font-bold mb-2">Starhifi Website</h3>
+                          <p class="text-gray-700 mb-4 flex-grow">This project is a fully self-designed e-commerce website focused on selling technology products online. I used Figma to craft a clean, modern, and user-friendly interface that emphasizes intuitive navigation and visual appeal.</p>
+                          <a href="https://starhifi.com/" target="_blank" class="text-blue-500 hover:underline mt-auto">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 2 - NEW LIVE PROJECT -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 relative flex flex-col h-full">
+                      <div class="relative">
+                          <img src="/RestroX .png" alt="RestroX Website" class="w-full h-48 object-cover">
+                          <div class="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1 text-xs font-semibold rounded">
+                              LIVE
+                          </div>
+                      </div>
+                      <div class="p-4 flex flex-col flex-grow">
+                          <h3 class="text-xl font-bold mb-2">RestroX Website</h3>
+                          <p class="text-gray-700 mb-4 flex-grow">This team project is part of my work with the company I'm currently involved with. The website highlights RestroX Software, an all-in-one platform tailored for restaurants, cafés, and hotels to manage and optimize their day-to-day operations efficiently.</p>
+                          <a href="https://www.restrox.com/np" target="_blank" class="text-blue-500 hover:underline mt-auto">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 3 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col h-full">
+                      <img src="mockuuups-iphone-16-mockup-on-concrete-surface-with-charging-cable.jpeg" alt="Project 1" class="w-full h-48 object-cover">
+                      <div class="p-4 flex flex-col flex-grow">
+                          <h3 class="text-xl font-bold mb-2">News App Mobile Design</h3>
+                          <p class="text-gray-700 mb-4 flex-grow">Info is a modern news app where you can follow your favorite news providers and stay updated with the latest stories. You can also share your own news, making it a dynamic platform for both readers and contributors.</p>
+                          <a href="https://www.figma.com/proto/V4Z2o2eu2wng09sAisUvN2/Untitled?node-id=1-5&t=IKoO0QuknIJmjCa9-1" target="_blank" class="text-blue-500 hover:underline mt-auto">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 4 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col h-full">
+                      <img src="/Realstate.png" alt="Project 6" class="w-full h-48 object-cover">
+                      <div class="p-4 flex flex-col flex-grow">
+                          <h3 class="text-xl font-bold mb-2">Real Estate Mobile App Design</h3>
+                          <p class="text-gray-700 mb-4 flex-grow">This is a real estate mobile app designed to help users easily buy, sell, or rent properties. The app features a user-friendly interface that allows property owners to list their homes, land, or apartments, while buyers and renters can browse and filter listings seamlessly. The entire UI/UX design was created by me with a focus on simplicity and functionality.</p>
+                          <a href="https://www.figma.com/design/6IYU2YGfhxA98ZW8AmrntT/Real-Estate-Project?node-id=66-12426&t=CoO5D6Thk2B8aqSi-1" target="_blank" class="text-blue-500 hover:underline mt-auto">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 5 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                      <img src="flower mockup.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                          <h3 class="text-xl font-bold mb-2">Clean Flower Selling Website Design</h3>
+                          <p class="text-gray-700 mb-4">A clean and modern flower shop website design with a user-friendly layout, vibrant visuals, and seamless navigation.</p>
+                          <a href="https://www.figma.com/proto/mZ08U7jxiht5LgeW0K33GI/Untitled?node-id=1-5&t=IQx3jyJGSC6wWmtc-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 6 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                      <img src="Car.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                          <h3 class="text-xl font-bold mb-2">Car Rental Website Design</h3>
+                          <p class="text-gray-700 mb-4">A modern and user-friendly car rental website with seamless booking, advanced search, and a sleek design for the best user experience.</p>
+                          <a href="https://www.figma.com/proto/Y191nu2RAZGDK5dTnTC8t8/Untitled?node-id=1-689&t=fqjzTpFJNL21HII1-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 7 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                      <img src="company profile mockup.jpg" alt="Project 5" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                          <h3 class="text-xl font-bold mb-2">Company Profile Design</h3>
+                          <p class="text-gray-700 mb-4">A modern and user-friendly company profile with all the information about services, team members, and the clients included.</p>
+                          <a href="https://www.figma.com/proto/cGfjnw1eutZD3mvyqLKdGh/Untitled?node-id=0-3&t=9NwRwWzYvkocEVuL-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 8 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                      <img src="/Fresh Hotel.png" alt="Project 6" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                          <h3 class="text-xl font-bold mb-2">Restaurant Website Design</h3>
+                          <p class="text-gray-700 mb-4">This is a custom-designed restaurant website created for a client who requested a clean and simple design with a light green color theme. The entire design was done by me, focusing on user-friendly layout and a fresh, modern aesthetic that reflects the restaurant's brand.</p>
+                          <a href="https://www.figma.com/design/Tsui3SS6o8ioB74qj0rlt7/Untitled?node-id=0-1&t=wpkOKsLukBe8z2G6-1" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+                      </div>
+                  </div>
+                  <!-- Project Card 9 -->
+                  <div class="bg-light-gray shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                      <img src="Laptop Screen Website Mockup.png" alt="Project 2" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                          <h3 class="text-xl font-bold mb-2">Landing Page Design</h3>
+                          <p class="text-gray-700 mb-4">Modern and sleek landing page design with a clean black-and-white theme. The layout is user-friendly, featuring a bold CTA, structured navigation, and a visually appealing hero section that enhances engagement.</p>
+                          <a href="https://www.figma.com/proto/aQIcfkQyIXFX0HCPNFBgid/Untitled?page-id=0%3A1&node-id=7-148&viewport=-166%2C251%2C0.1&t=mTlEravhpFv7QxCe-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Add more sections or elements as needed -->
+          </div>
+      </div>
 
       
       
